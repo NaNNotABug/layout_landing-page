@@ -24,10 +24,14 @@
     line-height: 100%;
     letter-spacing: 0;
     vertical-align: middle;
+
+    @media (min-width: 576px) {
+      font-size: 48px;
+    }
   }
 
   &__bottom {
-    padding: 0 20px 40px;
+    padding-bottom: 40px;
+    @include contentPaddinginline;
   }
-
 }

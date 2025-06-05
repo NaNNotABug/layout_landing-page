@@ -1,13 +1,14 @@
 .top-bar {
-  padding: 24px 20px;
+  padding-block: 24px;
+  @include contentPaddinginline;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
 
 
-  @media (min-width: 576px) {
-    padding: 32px 72px;
+  @include onTablet {
+    padding-block: 64px;
   }
 
   &__icons {
@@ -17,6 +18,11 @@
 
   &__logo {
     display: flex;
+
+    @media (min-width: 576px) {
+      height: 24px;
+      width: 228px;
+    }
   }
 }
 

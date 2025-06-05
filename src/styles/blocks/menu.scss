@@ -25,7 +25,7 @@
   }
 
   &__content {
-    padding-inline: 20px;
+    @include contentPaddinginline
   }
 
   &__nav {

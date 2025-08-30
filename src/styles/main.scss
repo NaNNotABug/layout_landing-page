@@ -1,10 +1,9 @@
-@import "./utils/variables.scss";
-@import "./utils/mixins";
-
-@import "blocks/footer";
-@import "blocks/header";
-@import "blocks/icon";
-@import "blocks/menu";
-@import "blocks/nav";
-@import "blocks/page";
-@import "blocks/top-bar";
+@import './utils/variables';
+@import './utils/mixins';
+@import 'blocks/footer';
+@import 'blocks/header';
+@import 'blocks/icon';
+@import 'blocks/menu';
+@import 'blocks/nav';
+@import 'blocks/page';
+@import 'blocks/top-bar';

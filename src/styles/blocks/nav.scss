@@ -1,11 +1,28 @@
 .nav {
   &__link {
-    color: #1b2129;
+    position: relative;
+    color: $main-text-color;
     text-decoration: none;
     font-size: 22px;
     line-height: 22px;
     letter-spacing: 0;
 
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -8px;
+      display: block;
+      height: 1px;
+      width: 100%;
+      background-color: $main-text-color;
+      transform: scale(0);
+      transition: transform 0.3s;
+      transform-origin: left;
+    }
+
+    &:hover::after {
+      transform: scale(1);
+    }
   }
 
   &__list {

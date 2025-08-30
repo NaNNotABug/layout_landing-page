@@ -1,14 +1,13 @@
 .header {
+  display: none !important;
+
   box-sizing: border-box;
   background-image: url(../images/header-bg-mobile.png);
   height: 100vh;
   background-size: cover;
   background-position: center;
-
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
-
 
   &__top {
     display: flex;
@@ -32,6 +31,11 @@
 
   &__bottom {
     padding-bottom: 40px;
-    @include contentPaddinginline;
+
+    @include content-padding-inline;
+
+    @media (min-width: 576px) {
+      padding-bottom: 64px;
+    }
   }
 }

@@ -4,6 +4,9 @@
   width: 24px;
   background-repeat: no-repeat;
   background-size: cover;
+  transition: transform 0.3s;
+
+  @include hover(transform, scale(1.2));
 
   @media (min-width: 576px) {
     height: 32px;
@@ -11,15 +14,18 @@
   }
 
   &--phone {
-  background-image: url(../icons/icon-phone.png);
+    background-image: url(../icons/icon-phone.svg);
   }
 
   &--menu {
-    background-image: url(../icons/icon-burger-menu.png);
+    background-image: url(../icons/icon-burger-menu.svg);
+
+    &:hover {
+      background-image: url(../icons/icon-burger-menu-hover.svg);
+    }
   }
 
   &--close {
-    background-image: url(../icons/icon-close.png);
+    background-image: url(../icons/icon-close.svg);
   }
-
 }

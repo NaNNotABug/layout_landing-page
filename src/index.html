@@ -150,12 +150,12 @@
       <div class="container">
         <div class="main__content">
           <section
-            class="recomemended"
+            class="recommended"
             id="recommended"
           >
             <h2 class="section-title">Recommended</h2>
             <div class="recommended__products">
-              <article class="product">
+              <article class="product recommended__product">
                 <img
                   src="images/products/beosound-a5.png"
                   alt="BEOSOUND A5"
@@ -171,7 +171,7 @@
                 </p>
                 <p class="product__price">$ 1299.00</p>
               </article>
-              <article class="product">
+              <article class="product recommended__product">
                 <img
                   src="images/products/beoplay-hx.png"
                   alt="BEOPLAY HX"
@@ -186,7 +186,7 @@
                 </p>
                 <p class="product__price">$ 499.00</p>
               </article>
-              <article class="product">
+              <article class="product recommended__product">
                 <img
                   src="images/products/beosound-theatre.png"
                   alt="BEOSOUND THEATRE"
@@ -216,47 +216,102 @@
 
             <div class="categories__content">
               <div class="categories__category">
-                <img
-                  src="./images/products/portable-speaker-1.png"
-                  alt="portable-speaker-1"
-                  class="categories__product"
-                />
-                <img
-                  src="./images/products/portable-speaker-2.png"
-                  alt="portable-speaker-2"
-                  class="categories__product"
-                />
-                <div class="categories__name">Portable speakers</div>
+                <picture class="categories__product">
+                  <source
+                    media="(min-width:1024px)"
+                    srcset="./images/products/portable-speaker-1--desktop.png"
+                  />
+                  <source
+                    media="(min-width:576px)"
+                    srcset="./images/products/portable-speaker-1--tablet.png"
+                  />
+                  <img
+                    src="./images/products/portable-speaker-1--mobile.png"
+                    alt="portable-speaker-1"
+                  />
+                </picture>
+                <picture class="categories__product">
+                  <source
+                    media="(min-width:1024px)"
+                    srcset="./images/products/portable-speaker-2--desktop.png"
+                  />
+                  <source
+                    media="(min-width:576px)"
+                    srcset="./images/products/portable-speaker-2--tablet.png"
+                  />
+                  <img
+                    src="./images/products/portable-speaker-2--mobile.png"
+                    alt="portable-speaker-2"
+                  />
+                </picture>
               </div>
+              <div class="categories__name">Portable speakers</div>
 
               <div class="categories__category">
-                <img
-                  src="./images/products/earphone-1.png"
-                  alt="earphone-1"
-                  class="categories__product"
-                />
-                <img
-                  src="./images/products/earphone-2.png"
-                  alt="earphone-2"
-                  class="categories__product"
-                />
-                <div class="categories__name">Earphones</div>
+                <picture class="categories__product">
+                  <source
+                    media="(min-width:1024px)"
+                    srcset="./images/products/earphone-1--desktop.png"
+                  />
+                  <source
+                    media="(min-width:576px)"
+                    srcset="./images/products/earphone-1--tablet.png"
+                  />
+                  <img
+                    src="./images/products/earphone-1--mobile.png"
+                    alt="earphone-1"
+                  />
+                </picture>
+                <picture class="categories__product">
+                  <source
+                    media="(min-width:1024px)"
+                    srcset="./images/products/earphone-2--desktop.png"
+                  />
+                  <source
+                    media="(min-width:576px)"
+                    srcset="./images/products/earphone-2--tablet.png"
+                  />
+                  <img
+                    src="./images/products/earphone-2--mobile.png"
+                    alt="earphone-2"
+                  />
+                </picture>
               </div>
+              <div class="categories__name">Earphones</div>
 
               <div class="categories__category">
-                <img
-                  src="./images/products/smart-speaker-1.png"
-                  alt="smart-speaker-1"
-                  class="categories__product"
-                />
-                <img
-                  src="./images/products/smart-speaker-2.png"
-                  alt="smart-speaker-2"
-                  class="categories__product"
-                />
-                <div class="categories__name">Smart Home</div>
+                <picture class="categories__product">
+                  <source
+                    media="(min-width:1024px)"
+                    srcset="./images/products/smart-speaker-1--desktop.png"
+                  />
+                  <source
+                    media="(min-width:576px)"
+                    srcset="./images/products/smart-speaker-1--tablet.png"
+                  />
+                  <img
+                    src="./images/products/smart-speaker-1--mobile.png"
+                    alt="smart-speaker-1"
+                  />
+                </picture>
+                <picture class="categories__product">
+                  <source
+                    media="(min-width:1024px)"
+                    srcset="./images/products/smart-speaker-2--desktop.png"
+                  />
+                  <source
+                    media="(min-width:576px)"
+                    srcset="./images/products/smart-speaker-2--tablet.png"
+                  />
+                  <img
+                    src="./images/products/smart-speaker-2--mobile.png"
+                    alt="smart-speaker-2"
+                  />
+                </picture>
               </div>
+              <div class="categories__name">Smart Home</div>
 
+              <div class="categories__button">View all</div>
             </div>
           </section>
           <section

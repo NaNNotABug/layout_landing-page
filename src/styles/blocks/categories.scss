@@ -1,43 +1,84 @@
 .categories {
-  --columns: 2;
 
-  display: grid;
-  column-gap: 20px;
-  grid-template-columns: repeat(var(--columns), 1fr);
-
-  @include on-tablet {
-    --columns: 6;
-
-    column-gap: 24px;
-  }
-
-  @include on-desktop {
-    --columns: 12;
-  }
+  @include page-grid;
 
   &__title {
-    grid-column: 1 / -1;
     margin-bottom: 47px;
   }
 
   &__category {
-    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(var(--columns), 1fr);
+    column-gap: 20px;
 
-    grid-column: 1 / -1;
+    @include on-tablet {
+      grid-template-columns: repeat(var(--columns), 1fr);
+
+      column-gap: 24px;
+    }
+
+    @include on-desktop {
+      grid-template-columns: repeat(var(--columns), 1fr);
+    }
   }
 
   &__product {
     width: 100%;
+    margin-bottom: 16px;
+    grid-column: span 1;
+
+    @include on-tablet {
+      grid-column: span 3;
+    }
+
+    @include on-desktop {
+      grid-column: span 6;
+    }
+    img {
+      width: 100%;
+      display: block;
+    }
   }
 
   &__name {
-    grid-column: 1 / -1;
-    text-align: left;
+    font-weight: 700;
+    font-style: bold;
     font-size: 18px;
     line-height: 140%;
+    letter-spacing: 0;
 
-    margin: 0;
-    padding: 0;
+    margin-bottom: 40px;
+
+    @include on-tablet {
+      font-size: 24px;
+    }
   }
 
+  &__button {
+    height: 56px;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    line-height: 56px;
+    font-weight: 700;
+    font-style: bold;
+    font-size: 16px;
+    background-color: #f98921;
+    border-radius: 8px;
+    margin-bottom: 96px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+      background-color: #1b2129;
+    }
+
+    &:active {
+      background-color: #010810;
+    }
+
+    @include on-desktop {
+      width: 324px;
+    }
+  }
 }

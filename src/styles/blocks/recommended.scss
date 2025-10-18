@@ -1,18 +1,6 @@
 .recommended {
   &__products {
     @include page-grid;
-
-    display: grid;
-    gap: 40px 20px;
-    grid-template-columns: repeat(2, 1fr);
-
-    @include on-tablet {
-      grid-template-columns: repeat(6, 1fr);
-    }
-
-    @include on-desktop {
-      grid-template-columns: repeat(12, 1fr);
-    }
   }
 
   &__product {
@@ -25,5 +13,21 @@
     @include on-desktop {
       grid-column: span 4;
     }
+
+    .product__photo {
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    &:hover {
+      .product__photo {
+        transform: scale(1.03);
+      }
+    }
+
   }
+
+
+
+
 }

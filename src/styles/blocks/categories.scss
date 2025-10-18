@@ -1,27 +1,15 @@
 .categories {
-  @include page-grid;
 
   &__title {
     margin-bottom: 47px;
   }
 
   &__category {
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    column-gap: 20px;
-
-    @include on-tablet {
-      grid-template-columns: repeat(var(--columns), 1fr);
-
-      column-gap: 24px;
-    }
-
-    @include on-desktop {
-      grid-template-columns: repeat(var(--columns), 1fr);
-    }
+    @include page-grid;
   }
 
   &__product {
+    transition: transform 0.3s ease;
     width: 100%;
     margin-bottom: 16px;
     grid-column: span 1;
@@ -36,6 +24,10 @@
     img {
       width: 100%;
       display: block;
+    }
+
+    &:hover {
+      transform: scale(1.03);
     }
   }
 
@@ -64,9 +56,9 @@
     font-size: 16px;
     background-color: #f98921;
     border-radius: 8px;
-    margin-bottom: 96px;
+    margin-bottom: 56px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 
     &:hover {
       background-color: #1b2129;
@@ -74,6 +66,10 @@
 
     &:active {
       background-color: #010810;
+    }
+
+    @include on-tablet {
+      margin-bottom: 64px;
     }
 
     @include on-desktop {

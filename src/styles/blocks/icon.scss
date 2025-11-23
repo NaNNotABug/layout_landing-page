@@ -4,7 +4,7 @@
   width: 24px;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: transform 0.3s;
+  transition: transform $effect-duration;
 
   @include hover(transform, scale(1.2));
 

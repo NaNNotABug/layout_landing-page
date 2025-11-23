@@ -17,11 +17,15 @@
 .menu {
   box-sizing: border-box;
   height: 100vh;
-  background-color: #f9f9f9;
+  background-color: $background-card-color;
   font-weight: 700;
+  overflow: auto;
 
   &__top {
     margin-bottom: 56px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
 
     @include on-tablet {
       margin-bottom: 0;

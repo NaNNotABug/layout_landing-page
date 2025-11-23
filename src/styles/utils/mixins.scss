@@ -20,6 +20,7 @@
   @include on-desktop {
     max-width: 1260px;
     margin-inline: auto;
+    padding-inline: 120px;
   }
 }
 
@@ -28,26 +29,26 @@
 }
 
 @mixin hover($property, $toValue) {
-  transition: #{$property} 0.3s;
+  transition: #{$property} $effect-duration;
   &:hover {
     #{$property}: $toValue;
   }
 }
 
 @mixin page-grid {
-    --columns: 2;
+  --columns: 2;
 
-    display: grid;
-    grid-template-columns: repeat(var(--columns), 1fr);
-    column-gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(var(--columns), 1fr);
+  column-gap: 20px;
 
-    @include on-tablet {
-      --columns: 6;
+  @include on-tablet {
+    --columns: 6;
 
-      column-gap: 24px;
-    }
+    column-gap: 24px;
+  }
 
-    @include on-desktop {
-      --columns: 12;
-    }
+  @include on-desktop {
+    --columns: 12;
+  }
 }

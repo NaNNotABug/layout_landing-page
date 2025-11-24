@@ -2,9 +2,9 @@
   &__wrapper {
     @include on-desktop {
       display: flex;
+      column-gap: 111px;
       justify-content: space-between;
       align-items: flex-start;
-      column-gap: 111px;
     }
   }
 

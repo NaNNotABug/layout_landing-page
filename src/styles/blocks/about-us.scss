@@ -14,8 +14,8 @@
     }
 
     img {
-      width: 100vw;
       height: 100%;
+      width: 100vw;
       max-width: 100%;
     }
   }
@@ -26,6 +26,9 @@
       flex-direction: row;
       justify-content: flex-start;
       column-gap: 24px;
+    }
+    @include on-desktop {
+      column-gap: 111px;
     }
   }
 
@@ -42,10 +45,14 @@
 
     @include on-tablet {
       margin-right: 24px;
+      line-height: 100%;
+      font-size: 40px;
     }
 
     @include on-desktop {
       margin-right: 111px;
+      font-size: 48px;
+      line-height: 48px;
     }
   }
 
